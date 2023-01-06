@@ -1,0 +1,119 @@
+.all{
+    display: flex;
+    position:relative;
+    padding:5px;
+    top:10px;
+    margin-top:10px;
+}
+.all .container{
+    display: flex;
+    position: absolute;
+    height:214em;
+    right:0px;
+    top:10px;
+    float:left;
+    flex-wrap:wrap;
+    align-content: unset;
+}
+.all .container .box{
+    background:#c3c3c3;
+    margin:10px;
+    border-radius:5px;
+}
+.all .container .box img{
+    width:100%;
+    height:60%;
+}
+.all .container .box .bottom{
+    height:50%;
+    width:100%;
+    padding:5px;
+}
+.all .container .box .bottom a{
+    text-decoration:none; 
+    font-family:fantasy;
+    color:rgb(42, 76, 187);  
+}
+.all .container .box .bottom p{
+    font-family:cursive;
+}
+footer{
+    top:230em;
+}
+@media screen and (max-width:5000px){
+    .all .container{
+        max-width: 80%;
+        top:4em;
+    }
+    .all .container .box{
+        height:17em;
+        width:17em;
+
+    }
+    .all .container .box .bottom a{
+        font-size: 1.2em;
+    }
+    .all .container .box .bottom p{
+        font-size: 1.2em;
+    }
+    .all .desc{
+    display: flex;
+    position:fixed;
+    height:98.7em;
+    width:20%;
+    top:15%;
+    left:0px;
+    background:#f0efef;
+    float:left;
+
+    }
+    .all .desc ul{
+        width:100%;
+        padding:0px;
+    }
+    .all .desc ul li{
+        list-style:none;
+        padding:5px;
+        font-size:1.2em;
+        border:1px solid #000;
+        margin:10px;
+        border-radius:5px;
+        font-family: cursive;
+        cursor:pointer;
+    }
+    .all .desc ul li:hover{
+        background:#000;
+        color:#fff;
+    }
+}
+
+
+@media screen and (max-width:800px){
+    .all .container{
+        height:205em;
+        width:100%;
+    }
+    footer{
+        top:480em;
+    }
+    .all .desc{
+        display:none;
+    }
+    .all .container .box{
+        width:20em;
+        height:20em;
+    }
+    footer{
+        top:590em;
+    }
+}
+
+
+@media screen and (max-width:516px){
+    .all .container{
+        top:-5em;
+        max-width: none;
+    }
+    
+}
+
